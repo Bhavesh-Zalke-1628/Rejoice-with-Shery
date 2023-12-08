@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Rejouice;
+    cursor: pointer;
 }
 
 html,
@@ -16,10 +17,6 @@ body {
     width: 100%;
 }
 
-/* #main{
-    height: 100%;
-    width: 100%;
-} */
 #page1 {
     height: 100vh;
     width: 100vw;
@@ -39,7 +36,7 @@ body {
     width: 100%;
     /* background-color: black; */
     position: relative;
-    z-index: 2;
+    z-index: 10;
     color: #fff;
     display: flex;
     align-items: center;
@@ -63,11 +60,30 @@ nav h3 {
 }
 
 
+#cursor {
+    height: 7vw;
+    width: 7vw;
+    border-radius: 50%;
+    background-color: #ff5f38;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+
+#cursor h5 {
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
 #pageContent h1 {
     font-family: Rejouice;
     font-size: 28vw;
     font-weight: 100;
     line-height: 27vw;
+    /* z-index: 10; */
 }
 
 
